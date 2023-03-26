@@ -11,3 +11,15 @@ The example code is in Python ([version 3.6](https://www.python.org/download/rel
 4) import time
 5) import numpy
 6) imoprt twilio
+
+
+
+### Description 📌
+
+A computer vision system that can automatically detect driver drowsiness in a real-time video stream and then play an alarm and sends sms to the Emergency contact if the driver appears to be drowsy.
+
+### Algorithm 👨‍🔬
+
+Each eye is represented by 6 (x, y)-coordinates, starting at the left-corner of the eye (as if you were looking at the person), and then working clockwise around the eye.
+
+It checks 20 consecutive frames and if the Eye Aspect ratio is less than 0.25, Alert is generated.
