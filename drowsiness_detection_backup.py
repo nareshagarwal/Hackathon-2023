@@ -4,9 +4,8 @@ import time
 import playsound
 import numpy as np
 from threading import Thread
-from twilio.rest import Client
 
-count_1=1
+
 def play_alarm(alarm_path):
     while True:
         if kill_thread:
@@ -41,13 +40,10 @@ def resize_new(image):
 
 
 ear_threshold = 0.25
-frame_threshold = 15
+frame_threshold = 25
 frame_count = 0
 blow_alarm = False
 kill_thread = False
-account_sid = 'AC2e7af544be285a75d4a0aae63e727ed4'
-auth_token = 'f791b298810ff1decb8c1ba76a9b449e'
-client = Client(account_sid, auth_token)
 
 
 face_detector = dlib.get_frontal_face_detector()
@@ -94,6 +90,8 @@ while True:
 
         for x,y in eye_loc:
             cv2.circle(frame, (x,y), 1, (0, 255, 0), -1)
+
+
         if ear < ear_threshold:
             frame_count += 1
 
@@ -101,11 +99,6 @@ while True:
                 print("DROWSINESS DETECTED!!  BLOW ALARM!!")
                 cv2.putText(frame, "DROWSINESS ALERT!", (10, 30),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
-                if count_1==1:
-                    message = client.messages.create(body='Alert:- Drowsiness Detected !!  Call Vishal to Give alert',from_='+15674595592',to='+919359607389')
-                    count_1=count_1+1
-                    print('message sent')
-                #print(message.sid)            
 
                 if not blow_alarm:
                     blow_alarm = True
