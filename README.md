@@ -1,16 +1,23 @@
 # Drowsiness Detection OpenCV 😴 🚫 🚗
+<h2> Team Invincible </h2>
+
+[![](https://img.shields.io/badge/Naresh-Agrawal-brightgreen.svg?colorB=ff0000)]()
+[![](https://img.shields.io/badge/Vishal-Bhute-brightgreen.svg?colorB=ff0000)]()
+[![](https://img.shields.io/badge/Bhushan-Pansare-brightgreen.svg?colorB=ff0000)]()
+
 This code can detect your eyes and alert when the user is drows.
+
 ## Applications 🎯
 This can be used by Drivers who tend to drive for a longer period of time that may lead to accidents.
 ### Code Requirements 🦄
-The example code is in Python ([version 3.6](https://www.python.org/download/releases/3.6/))
+The example code is in Python ([version 3.6](https://www.python.org/downloads/release/python-360/))
 ### Dependencies
 1) import cv2
 2) import imutils
-3) import dlib
-4) import time
-5) import numpy
-6) imoprt twilio
+4) import dlib
+5) import time
+6) import numpy
+7) imoprt twilio
 
 
 
