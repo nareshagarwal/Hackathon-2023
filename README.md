@@ -33,7 +33,7 @@ It checks 15 consecutive frames and if the Eye Aspect ratio is less than 0.25, A
 
 ### Results 📊
 
-<img src="">
+<img src="https://github.com/bhush-code/Hackathon-2023/blob/api/drowsiness.gif">
 
 ### Execution 🐉
 To run the code, type `python Drowsiness_Detection.py`
