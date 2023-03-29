@@ -17,7 +17,7 @@ The example code is in Python ([version 3.6](https://www.python.org/downloads/re
 4) import dlib
 5) import time
 6) import numpy
-7) imoprt twilio
+7) import twilio
 
 
 
