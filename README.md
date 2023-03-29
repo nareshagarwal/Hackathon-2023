@@ -8,7 +8,7 @@
 This code can detect your eyes and alert when the user is drows.
 
 ## Applications 🎯
-This can be used by Drivers who tend to drive for a longer period of time that may lead to accidents.
+This can be used by Drivers who tend to drive for a longer period of time that may lead to accidents due to fatigue and drowsiness.
 ### Code Requirements 🦄
 The example code is in Python ([version 3.6](https://www.python.org/downloads/release/python-360/))
 ### Dependencies
